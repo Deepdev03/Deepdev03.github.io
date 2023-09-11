@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<title>Dipesh</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<style>
+    *{
+        box-sizing: border-box;
+        margin: none;
+        padding: none;
+    }
+    html{
+        
+        border-radius: 10px;
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: black;
+        color: white;
+
+        
+    }
+    section
+    {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        
+
+    }
+.left-container{   
+    width: 50%;
+    padding: 20px;
+    margin: 10px;
+    margin-left: 100px;
+    margin-right: 10px;
+    border-left: 1px solid;
+    
+
+}
+.right-container{
+    border-right: 1px solid;
+    margin-right: 100px;
+    width: 50%;
+    padding: 40px;
+    margin: 10px;
+    margin-left: 0px;
+    margin-right: 100px;
+    
+}
+
+.profile-img img{
+    width: 250px;
+    height: 250px;
+    border-radius: 250px;
+    border-bottom: 1px solid white;
+    box-shadow: 1px 5px 10px white;
+}
+
+
+h1{
+    font-size: 30px;
+}
+p{
+    font-size: 20px;
+}
+li{
+    font-size: 20px;
+}
+.introduction{
+    padding: 20px;
+    text-decoration: dotted;
+}
+@media screen and (max-width:590px){
+    .left-container{
+        height: 1600px;
+    }
+    .right-container{
+        height: 1600px;
+    }
+}
+</style>
+
+</head>
+
+<body>
+    <nav class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="product.html">Product</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="javascript:void(0)" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i>
+        </a>
+      </nav>
+<section class=".wrapper">
+    
+    <div class="left-container">
+        <div class="profile-img">
+            <img src="profile\profile.jpeg">
+        </div>
+
+        <div class="contact">
+            <h2>Contact</h2>
+            <p><i class="fa fa-envelope" style="font-size:24px">ganeshpanta60@gmail.com</i>
+            <br>
+            <i class="fa fa-phone" style="font-size:24px">9749721257 || 9816694851</i></p>
+        
+            
+        </div>
+        <br>
+        <hr>
+
+        <div class="skill">
+            <h2>Skills</h2>
+            <ul>
+                <li>Interior designer</li>
+                
+            </ul>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="reference">
+            <h2>References</h2>
+            <p></p>
+            <p></p>
+            
+        </div>
+
+    </div>
+    <div class="right-container">
+        <div class="introduction">
+            <h1>Ganesh Panta</h1>
+            <p>I am a interior designer. I am also seller of mural and wallpapers.</p>
+        </div>
+        <hr>
+        <div class="work-experience">
+            <h1>Work Experience</h1>
+            <h3>Project: <span> Date       </span></h3>
+            <ul>
+                <li>I was staff of ripl with interprises ltd.</li>
+                <li>Decored interior 1000+</li>
+                <li>Manager of bora</li>
+                
+
+            </ul>
+
+
+
+        </div>
+        <hr>
+        <div class="education">
+            <h1>Education</h1>
+            <ul>
+                <li>+2 at Rainbow international college</li>
+                <li>Bachelor at mahendra ratna campus</li>
+            </ul>
+        </div>
+        
+    </div>
+
+</section>
+</body>
+</html>

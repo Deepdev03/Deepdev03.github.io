@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<style>
+	body{
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+	}
+	.container
+	{
+		text-align: center;
+		margin-top: 50px;
+	}
+	.container h1
+	{
+		font-family: serif;
+	}
+	.container h2
+	{
+		margin-left: 40px;
+		margin-bottom: 5px;
+	}
+	.container form input
+	{
+		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+		padding: 10px;
+		margin-top: 10px;
+		background-color: ghostwhite;
+		border: none;
+	}
+	.container textarea
+	{
+		margin-top: 20px;
+		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+		padding: 50px;
+	}
+	.container .bttn input
+	{
+		border: 1px solid;
+		background-color: rgb(155, 200, 100);
+	}
+	.box
+	{
+		margin-left: 400px;
+		width: 50%;
+	}
+</style>
+<body>
+<div>
+	<nav class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="product.html">Product</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="javascript:void(0)" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i>
+        </a>
+      </nav>
+</div>
+
+<div class="container">
+	<h1>Contact Us</h1>
+	<br>
+	<h2>Contact number: +977 1234567890</h2>
+	<br>
+	<h2>Email Address: Bonsai123@gmail.com</h2>
+	<br>
+	<h2>Address: Kamal Marg, Kathmandu 44600</h2>
+	<br><br><br>
+
+
+<!--form submission-->
+
+	<div class="box">
+	<h2>To get in touch with us please fillout the form below</h2>
+
+	<form name="myform" onsubmit="validateform()">
+		<p>First name: <input type="text" name="fname"></p>
+		<p>Last name: <input type="text" name="lname"></p>
+		<p for="message" style="margin-top: 20px">Please leave your feedback below:</p>
+		<p><textarea rows="8"   cols="30" id="message" name="message"></textarea><br>
+	<div class="bttn">
+		<input type="submit" value="validate"></p>
+	</div>
+	</form>
+	</div>
+</div>
+<div class="footer">
+	<footer style="margin-top: 50px">
+        <div class="footer">
+  
+          <h1>Connect with us on:</h1>
+          <table>
+            <tr>
+              <td><a href="facebook.com"><img src="logo/Facebook_Logo.png"></td>
+              <td><a href="tiktok.com"><img src="logo/tiktok.png"></td>
+            </tr>
+            
+            <tr>
+              <td><a href="gmail.com"><img src="logo/gmail.png"></td>
+              <td><img src="logo/phone.png"></td>
+            </tr>
+            <tr>
+              <td>
+                <h3><span>&copy</span> Panta Home Decor</h3>
+              </td>
+            </tr>
+          </table>
+      </div>
+      </footer>
+  	</div>
+<script>
+	function validateform() 
+		{
+			var fname = document.forms['myform']['fname'].value;
+			var lname = document.forms['myform']['lname'].value;
+			if (fname=="" || lname=="")
+			{
+			alert("No details entered !") 
+			}
+			else
+			{
+			alert("Thankyou for your response. Our service will soon be in touch with you")
+			}
+		}
+</script> 
+</body>
+</html>
